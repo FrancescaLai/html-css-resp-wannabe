@@ -6,28 +6,7 @@
 }
 
 /* Responsive Row */
-@media screen and (max-width: 420px){
-  #lezioni{
-    background-color: #ee99a0;
-  }
-}
 
-@media screen and (max-width: 420px){
-  .row{
-    width: 100%;
-    margin-top: 5%;
-    color: #fff;
-  }
-}
-
-@media screen and (max-width: 420px){
-  .row h1{
-    width: 100%;
-    color: #fff3b2;
-    text-transform: uppercase;
-  }
-}
-/* /Responsive Row */
 
 /* BLOCCO LEZIONI */
 #lezioni .row>.left
@@ -37,14 +16,6 @@
 }
 
 /* Responsive Lezioni */
-
-@media screen and (max-width: 420px){
-  #lezioni .row>.left, .row>.right{
-    width: calc(( 100% / 2) - 40px);
-    float: left;
-    margin: 20px;
-  }
-}
 
 #lezioni .row img {
   /* per centrare orizzontalmente */
@@ -66,25 +37,6 @@
 #steps .row>.right {
   float: left;
   width: 33%;
-}
-
-@media screen and (max-width: 420px){
-  #steps .row>.right{
-    margin: 0px
-  }
-}
-
-@media screen and (max-width: 420px){
-  #steps .row>.right, .row>.central, .row>.right{
-    width: calc(100% / 3)
-  }
-}
-
-
-@media screen and (max-width: 420px){
-  #steps{
-    background-color: #94b5c0;
-  }
 }
 
 #steps {
@@ -124,12 +76,81 @@ img {
   height: 200px;
 }
 
-@media screen and (max-width: 420px){
-  img{
-    height: 50px;
-  }
-}
-
 .clear {
   clear: both;
 }
+
+/* Responsive <420px*/
+@media screen and (max-width: 420px){
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#lezioni.container{
+  background-color: #ee99a0;
+  }
+
+.row{
+  width: 100%;
+  color: #fff;
+  margin-top: 0px;
+  }
+
+.row h1{
+  color: #ffe3de;
+  text-transform: uppercase;
+  padding-top: 10px;
+  }
+
+.row h3{
+  color: #ffe3de;
+  margin: 10px 0px;
+}
+
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: calc(( 100% / 2) - 40px);
+  float: left;
+  margin: 20px;
+}
+
+#steps{
+  background-color: #94b5c0;
+}
+
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  background-color: #94b5c0;
+  width: calc(100% / 3);
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+
+#why{
+  background-color: #70af85;
+  margin-top: 0px;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  margin-top: 15px;
+  padding: 0px 25px;
+}
+
+#why hr{
+  margin-top: 15px;
+}
+
+#why .row>.third{
+  padding-bottom: 15px;
+}
+
+img{
+  height: 50px;
+}
+}
+/* Responsive <420px*/
